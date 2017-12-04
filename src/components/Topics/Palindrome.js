@@ -5,8 +5,8 @@ import React, { Component } from 'react';
       super()
       this.state = {
         userInput: '',
-        palindrome: '',
-      }
+        palindrome: ''
+      };
     }
     updateValue(val){
       this.setState({userInput: val})
@@ -27,7 +27,7 @@ import React, { Component } from 'react';
     <h4> Is it a Palindrome?</h4>
       <input className="inputLine" onChange={ (e) => this.updateValue(e.target.value)}></input>
       <button className="confirmationButton" onClick={ () => this.solveProblem(this.state.userInput)}>Is it a Palindrome?</button>
-      <span className="resultsBox">{JSON.stringify(this.state.palindrome)}</span>
+      <span className="resultsBox">Palindrome: {this.state.palindrome}</span>
     </div>
      )
   }   
