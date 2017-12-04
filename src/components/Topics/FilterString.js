@@ -30,7 +30,7 @@ import React, { Component } from 'react';
      <h4>Filter String</h4>
      <span className="puzzleText">{JSON.stringify(this.state.food)}</span>
      <input className="inputLine" onChange={ (e) => this.updateValue(e.target.value)}></input>
-     <button className="confirmationButton" onClick={ this.solveProblem(this.state.userInput)}>Filter Array</button>
+     <button className="confirmationButton" onClick={ () => this.solveProblem(this.state.userInput)}>Filter Array</button>
      <span className="resultsBox filterStringRB">{JSON.stringify(this.state.filteredArray)}</span>
    </div>
 

@@ -41,10 +41,6 @@ import React, { Component } from 'react';
 
       }
       this.setState({ filteredArray: filteredAnimals})
-
-
-
-
     }
     
 
